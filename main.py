@@ -47,8 +47,8 @@ else:
 		total_mileage += trip["mileage"]
 
 	print "total cost:", "%.2f" % total_cost
-	print "total gas:", total_gas
-	print "total mileage:", total_mileage
+	print "total gas:", "%.3f" % total_gas
+	print "total mileage:", "%.1f" % total_mileage
 
 	print
 
