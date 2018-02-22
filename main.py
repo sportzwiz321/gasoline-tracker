@@ -4,9 +4,7 @@ fuelDay = {}
 
 data = open("sample.txt", "r")
 data_line = data.readlines()
-# print data_line[0].split("\n")
 for x in range(0, len(data_line)):
-# for line in data_line:
 	plain_line = data_line[x].split("\n")[0]
 	split_line = plain_line.split("/")
 	if len(split_line) >= 3:
@@ -24,25 +22,10 @@ for x in range(0, len(data_line)):
 
 			fuelDay[plain_line] = trip
 
-			# print split_line, len(split_line)
-
-			# print trip
-
-			# print
-
-
-		# for y in range(1, 4):
-		# 	print data_line[x + y].split("\n")[0].split(" ")[0]
-	# print line.split("\n")[0]
-# for day in fuelDay:
-# 	print day + ":", fuelDay[day]
-
 if len(sys.argv) != 4 and len(sys.argv) != 1:
 	print "Usage Error:\nmain.py expected"
 	print "Usage Error:\nmain.py [cost] [volume] [distance] expected"
 	sys.exit()
-
-# print "Hello World!"
 
 if len(sys.argv) == 4:
 	gas_total_cost = float(sys.argv[1])
